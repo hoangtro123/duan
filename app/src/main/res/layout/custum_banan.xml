@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filecustum_banan"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/txtTenBanAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imBanAn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/thembanan"
+            android:layout_below="@+id/txtTenBanAn"
+
+            />
+
+        <ImageView
+            android:id="@+id/imGoiMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goimon"
+            android:layout_below="@+id/imBanAn"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/imThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thanhtoan"
+            android:layout_below="@+id/imBanAn"
+            android:layout_toRightOf="@+id/imGoiMon"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/imAnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imBanAn"
+            android:src="@drawable/anbutton"
+            android:layout_toRightOf="@+id/imThanhToan"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            />
+
+
+
+</RelativeLayout>

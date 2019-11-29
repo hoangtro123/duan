@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".account.DangKiActivity">
+
+    <RelativeLayout
+
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:layout_marginLeft="16sp"
+            android:id="@+id/imgback"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_width="22dp"
+            android:layout_height="24dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="@string/dangki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+       app:hintEnabled="true"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiedttendangnhap"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="@string/tendangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintEnabled="true"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiedtmatkhau"
+           android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="@string/matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintEnabled="true"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiedtsodienthoai"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="@string/sodienthoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdadmin"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:text="@string/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rdnhanvien"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="8dp"
+            android:text="@string/nhanvien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btndangki"
+        android:textColor="@color/mautrang"
+        android:text="@string/dangki"
+        android:background="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="@string/bandacotaikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvdangnhap"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/dangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".account.QuenMatKhauActivity">
+
+   <RelativeLayout
+
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="56dp">
+
+       <ImageView
+           android:layout_marginLeft="16sp"
+           android:id="@+id/imgback"
+           android:layout_centerVertical="true"
+           android:src="@drawable/back"
+           android:layout_width="22dp"
+           android:layout_height="24dp" />
+
+       <TextView
+           android:textColor="@color/mautrang"
+           android:textSize="22sp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="16dp"
+           android:layout_toRightOf="@id/imgback"
+           android:text="@string/quyenmatkhau"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    tools:context=".account.DangNhapActivity">
+
+    <TextView
+        android:id="@+id/imgngonngu"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/custum_file"
+        android:textSize="16sp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/mautrang"
+        android:text="@string/tiengviet"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_below="@+id/imgngonngu"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logp"
+        android:layout_marginTop="-16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textColorHint="@color/mautrang"
+        android:id="@+id/edttaikhoan"
+        android:textColor="@color/mautrang"
+        android:background="@drawable/fileedttext"
+        android:drawablePadding="10dp"
+        android:hint="@string/tentaikhoan"
+      android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/profile"
+        android:layout_below="@+id/imglogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttaikhoan"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/filematkhau"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="@string/matkhau"
+        android:inputType="textPassword"
+        android:textColor="@color/mautrang"
+        android:textColorHint="@color/mautrang" />
+
+    <Button
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/btndangnhap"
+        android:background="@drawable/filebuttondangnhap"
+        android:text="@string/dangnhap"
+        android:textAllCaps="false"
+        android:layout_margin="16dp"
+        android:layout_below="@id/edtmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textSize="18sp"
+        android:textColor="@color/mautrang"
+        android:id="@+id/btnthemtaikhoan"
+        android:background="@drawable/filebuttontaikhian"
+        android:text="@string/taotaikhoan"
+        android:textAllCaps="false"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/btndangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvquenmatkhau"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnthemtaikhoan"
+        android:textColor="@color/mautrang"
+        android:text="@string/quyenmatkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

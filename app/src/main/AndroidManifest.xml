@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="anhnhph05834.hoànganh.com.ordering">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ManChaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".account.DangNhapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".account.QuenMatKhauActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".account.NgonNguActivity"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".manchinh.ManChinhActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".account.DangKiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".manchinh.ThemBanAnActivity"
+            android:label="@string/thembanan"
+            android:theme="@style/PosUp" />
+        <activity
+            android:name=".manchinh.ThemThucDonActivity"
+            android:label="@string/themmonan" />
+        <activity android:name=".manchinh.ThemLoaithucDonActivity"
+            android:theme="@style/PosUp"
+            android:label="@string/themloaithucdon"
+            ></activity>
+    </application>
+
+</manifest>
