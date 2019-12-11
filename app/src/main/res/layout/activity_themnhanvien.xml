@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/txttenloai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="anhnhph05834.hoànganh.com.ordering.themnhanvien">
 
-    //còn cái nữa
     <LinearLayout
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
@@ -16,12 +14,12 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/giaohang"
+            android:id="@+id/nhanvien"
             android:layout_width="384dp"
             android:layout_height="220dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:src="@drawable/giaohang" />
+            android:src="@drawable/quanly" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:hint="Đơn hàng"
+                android:hint="Quản Lý"
                 android:textColorHint="@color/colorPrimary"
                 />
             <EditText
@@ -45,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:hint="người giao hàng"
+                android:hint="Ngô Hoàng Anh"
                 android:textColorHint="@color/colorPrimary"
                 />
 
@@ -55,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:hint="Giá tiền"
+                android:hint="Mã số :123"
                 android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
                 android:numeric="integer"
@@ -79,57 +77,41 @@
 
                 </Spinner>
 
-                <ImageButton
-                    android:id="@+id/imThemLoaiThucDon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_input_add"
-
-                    />
-
             </LinearLayout>
 
         </LinearLayout>
 
 
+
     </LinearLayout>
 
 
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btnThemdon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Thêm Đơn"
-        android:textColor="@color/mautrang"
-        android:layout_weight="1"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
-        />
+        <Button
+            android:id="@+id/btnThemNv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Nhân Viên"
+            android:textColor="@color/mautrang"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            />
 
-    <Button
-        android:id="@+id/btnNhandon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nhận Đơn"
-        android:textColor="@color/mautrang"
-        android:layout_weight="1"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimaryDark"
-        />
-    <Button
-        android:id="@+id/btnHuydon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hủy Đơn"
-        android:textColor="@color/mautrang"
-        android:layout_weight="1"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimaryDark"
-        />
-</LinearLayout>
+        <Button
+            android:id="@+id/btnNhandon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa Nhân Viên"
+            android:textColor="@color/mautrang"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
 </LinearLayout>

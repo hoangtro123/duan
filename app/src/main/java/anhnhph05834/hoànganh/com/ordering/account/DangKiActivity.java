@@ -88,7 +88,6 @@ public class DangKiActivity extends AppCompatActivity implements View.OnClickLis
                 nhanVien.setTENDN(tentaikhoan);
                 nhanVien.setMATKHAU(matkhau);
                 nhanVien.setSODT(dienthoai);
-
                 nhanVienDAO.themnhanvien(nhanVien);
                 Toast.makeText(DangKiActivity.this, "" + getString(R.string.themnhanvientanhcong), Toast.LENGTH_SHORT).show();
             }

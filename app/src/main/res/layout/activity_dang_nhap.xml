@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nen"
     tools:context=".account.DangNhapActivity">
-
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/imgngonngu"
         android:layout_marginTop="16sp"
@@ -22,26 +24,27 @@
 
     <ImageView
         android:id="@+id/imglogo"
+        android:layout_width="264dp"
+        android:layout_height="209dp"
         android:layout_below="@+id/imgngonngu"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logp"
-        android:layout_marginTop="-16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/thuonghieu" />
 
     <EditText
-        android:textColorHint="@color/mautrang"
         android:id="@+id/edttaikhoan"
-        android:textColor="@color/mautrang"
-        android:background="@drawable/fileedttext"
-        android:drawablePadding="10dp"
-        android:hint="@string/tentaikhoan"
-      android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:drawableLeft="@drawable/profile"
-        android:layout_below="@+id/imglogo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglogo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/fileedttext"
+        android:drawableLeft="@drawable/profile"
+        android:drawablePadding="20dp"
+        android:hint="@string/tentaikhoan"
+        android:textColor="@color/mautrang"
+        android:textColorHint="@color/mautrang" />
 
     <EditText
         android:id="@+id/edtmatkhau"
@@ -86,14 +89,15 @@
 
     <TextView
         android:id="@+id/tvquenmatkhau"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/btnthemtaikhoan"
-        android:textColor="@color/mautrang"
-        android:text="@string/quyenmatkhau"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnthemtaikhoan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/quyenmatkhau"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp" />
+</LinearLayout>
 
 </RelativeLayout>

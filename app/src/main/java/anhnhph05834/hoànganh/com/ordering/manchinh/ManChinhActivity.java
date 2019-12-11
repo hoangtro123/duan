@@ -24,7 +24,8 @@ import java.util.zip.Inflater;
 import anhnhph05834.hoànganh.com.ordering.R;
 import anhnhph05834.hoànganh.com.ordering.fragment.ThucDon_Far;
 import anhnhph05834.hoànganh.com.ordering.fragment.TrangChu_Far;
-
+import anhnhph05834.hoànganh.com.ordering.themnhanvien;
+import anhnhph05834.hoànganh.com.ordering.themthongke;
 
 
 public class ManChinhActivity extends AppCompatActivity
@@ -91,8 +92,11 @@ public class ManChinhActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.con,new ThucDon_Far()).commit();
 
         } else if (id == R.id.nav_nhanvien) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.con,new themnhanvien()).commit();
+
 
         } else if (id == R.id.nav_thongke) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.con,new themthongke()).commit();
 
         } else if (id == R.id.nav_dangxuat) {
             super.onBackPressed();

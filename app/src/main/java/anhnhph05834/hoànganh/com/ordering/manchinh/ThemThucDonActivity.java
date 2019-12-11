@@ -1,6 +1,7 @@
 package anhnhph05834.hoànganh.com.ordering.manchinh;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -35,6 +36,7 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
     private ImageButton imThemLoaiThucDon;
     private Button btnDongYThemMonAn;
     private Button btnThoatThemMonAn;
+    private Button btnshiper;
 
     private LoaiMonAnDAO loaiMonAnDAO;
     private LoaiMonAnAdapter anAdapter;
@@ -45,12 +47,12 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
 
     public static int REQUEST_CODE_THEMLOAITHUCDON = 112;
     public static int REQUEST_CODE_HINHANH = 12;
+    private String custum_layoutspiner_loaithucdon;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_themmonan);
-
         monAnDAO=new MonAnDAO(new DBManager(this));
         anhxa();
         sukienclick();
@@ -63,14 +65,14 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
         imHinhThucDon.setOnClickListener(this);
         btnThoatThemMonAn.setOnClickListener(this);
         btnDongYThemMonAn.setOnClickListener(this);
+        btnshiper.setOnClickListener(this);
 
     }
-
     private void hienthispiner() {
-
+        //app này nó viết từ lâu lắm r, uk
         loaiMonAnDAO = new LoaiMonAnDAO(new DBManager(this));
         loaiMonAnList = loaiMonAnDAO.dsloaimonan();
-        anAdapter = new LoaiMonAnAdapter(this, R.layout.custum_layoutspiner_loaithucdon, loaiMonAnList);
+        anAdapter = new LoaiMonAnAdapter(ThemThucDonActivity.this, R.layout.custum_layoutspiner_loaithucdon, loaiMonAnList);
         spinLoaiMonAn.setAdapter(anAdapter);
         anAdapter.notifyDataSetChanged();
 
@@ -84,6 +86,8 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
         imThemLoaiThucDon = (ImageButton) findViewById(R.id.imThemLoaiThucDon);
         btnDongYThemMonAn = (Button) findViewById(R.id.btnDongYThemMonAn);
         btnThoatThemMonAn = (Button) findViewById(R.id.btnThoatThemMonAn);
+        btnshiper = (Button) findViewById(R.id.btnshiper);
+
     }
 
 
@@ -135,7 +139,22 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
                 hinhchon.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(hinhchon, getString(R.string.mohinhanh)), REQUEST_CODE_HINHANH);
                 break;
+            case R.id.btnshiper:
+                // chạy di
+                shipper();
+                break;
+
         }
+    }
+
+    private void shipper() {
+        Toast.makeText(this, "cnhsd", Toast.LENGTH_SHORT).show();
+        Dialog dialog = new Dialog(this );
+        dialog.setContentView(R.layout.custum_layoutspiner_loaithucdon);
+//         ánh xạ view ở đây nhé
+
+        dialog.show();
+
     }
 
     @Override
@@ -155,6 +174,7 @@ public class ThemThucDonActivity extends AppCompatActivity implements View.OnCli
 
                 }
             }
+            //mafn kia ddang loi chajy sao ddc
         } else if (requestCode == REQUEST_CODE_HINHANH) {
             if (resultCode == Activity.RESULT_OK) {
 

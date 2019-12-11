@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="anhnhph05834.hoànganh.com.ordering">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -16,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ThongKeAct"></activity>
+        <activity android:name=".NhanVienAct" />
+        <activity android:name=".manchinh.ShipperAct" />
+        <activity android:name=".themnhanvien" />
         <activity
             android:name=".ManChaoActivity"
             android:screenOrientation="portrait"
@@ -53,10 +56,10 @@
         <activity
             android:name=".manchinh.ThemThucDonActivity"
             android:label="@string/themmonan" />
-        <activity android:name=".manchinh.ThemLoaithucDonActivity"
-            android:theme="@style/PosUp"
+        <activity
+            android:name=".manchinh.ThemLoaithucDonActivity"
             android:label="@string/themloaithucdon"
-            ></activity>
+            android:theme="@style/PosUp" />
     </application>
 
 </manifest>

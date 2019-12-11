@@ -27,9 +27,8 @@ import anhnhph05834.hoànganh.com.ordering.manchinh.ThemBanAnActivity;
 import anhnhph05834.hoànganh.com.ordering.model.BanAn;
 
 
-
 public class TrangChu_Far extends Fragment {
-
+//bam vao nut iconNhan vien nos hieen ra man hinhf ok
     public static int REQUEST_CODE_THEM=111;
     private GridView gvHienBanAn;
     private List<BanAn> banAnList;

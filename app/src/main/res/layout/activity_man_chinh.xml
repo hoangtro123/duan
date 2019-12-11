@@ -21,5 +21,4 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_man_chinh"
         app:menu="@menu/activity_man_chinh_drawer" />
-
 </android.support.v4.widget.DrawerLayout>

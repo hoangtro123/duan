@@ -22,7 +22,7 @@
             android:id="@+id/imBanAn"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/thembanan"
+            android:src="@drawable/ban"
             android:layout_below="@+id/txtTenBanAn"
 
             />
